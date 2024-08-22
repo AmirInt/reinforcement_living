@@ -26,10 +26,18 @@
     <Compile Include="utils.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\Figure_1.png" />
+    <Content Include="assets\Figure_2.png" />
+    <Content Include="assets\Figure_3.png" />
+    <Content Include="assets\Figure_4.png" />
+    <Content Include="assets\Figure_5.png" />
     <Content Include="game.tsv" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|VisualStudio|env (Python 3.11 (64-bit))" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
