@@ -29,7 +29,7 @@ The reward structure id illustrated in the following table:
 
 At the beginning of each episode, the player is placed at a random room and provided with a randomly selected quest. An example of a quest given to the player in text is You are hungry now. To complete this quest, the player has to navigate through the house to reach the kitchen and eat the apple (i.e., type in command eat apple). In this game, the underlying state (room and quest) is hidden from the player, who only receives a description of the underlying room.
 
-Recall that there are four rooms in this game. Assume that there are four quests in this game, each of which would be finished only if the player takes a particular command in a particular room. For example, the quest “You are sleepy" requires the player navigates through rooms to bedroom (with commands such as go east/west/south/north ) and then take a nap on the bed there. For each room, there is a corresponding quest that can be finished there. Note that in this game, the transition between states is deterministic.
+Recall that there are four rooms in this game. Assume that there are four quests in this game, each of which would be finished only if the player takes a particular command in a particular room. For example, the quest â€œYou are sleepy" requires the player navigates through rooms to bedroom (with commands such as go east/west/south/north ) and then take a nap on the bed there. For each room, there is a corresponding quest that can be finished there. Note that in this game, the transition between states is deterministic.
 
 In this problem, the expected optimal reward is `0.55375` and the algorithms' reward values must finally converge to this expected optimal value.
 
