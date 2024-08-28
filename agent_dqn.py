@@ -15,10 +15,10 @@ GAMMA = 0.5  # discounted factor
 TRAINING_EP = 0.5  # epsilon-greedy parameter for training
 TESTING_EP = 0.05  # epsilon-greedy parameter for testing
 NUM_RUNS = 10
-NUM_EPOCHS = 500
+NUM_EPOCHS = 300
 NUM_EPIS_TRAIN = 25  # number of episodes for training at each epoch
 NUM_EPIS_TEST = 50  # number of episodes for testing
-ALPHA = 0.05  # learning rate for training
+ALPHA = 0.1  # learning rate for training
 
 ACTIONS = framework.get_actions()
 OBJECTS = framework.get_objects()
@@ -93,8 +93,8 @@ def deep_q_learning(current_state_vector, action_index, object_index, reward,
     q_current = 1 / 2 * (q_value_action_cur[action_index]
                          + q_value_object_cur[object_index])
 
-    y = reward + (not terminal) * maxq_next
-    loss = 1 / 2 * (q_current - y) ** 2
+    y = reward + GAMMA * (not terminal) * maxq_next
+    loss = torch.pow(q_current - y, 2) / 2
 
     optimizer.zero_grad()
     loss.backward()
