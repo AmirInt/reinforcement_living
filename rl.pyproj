@@ -26,12 +26,16 @@
     <Compile Include="utils.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\feature_map.png" />
     <Content Include="assets\Figure_1.png" />
     <Content Include="assets\Figure_2.png" />
     <Content Include="assets\Figure_3.png" />
     <Content Include="assets\Figure_4.png" />
     <Content Include="assets\Figure_5.png" />
+    <Content Include="assets\homeworld.jpg" />
     <Content Include="game.tsv" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|VisualStudio|env (Python 3.11 (64-bit))" />
